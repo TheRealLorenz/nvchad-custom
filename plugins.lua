@@ -19,11 +19,18 @@ local M = {
           end, {})
         end,
       },
-      "williamboman/mason-lspconfig.nvim"
+      "williamboman/mason-lspconfig.nvim",
+      "jose-elias-alvarez/null-ls.nvim",
+      "jay-babu/mason-null-ls.nvim",
     },
     config = function()
       require("mason-lspconfig").setup()
       require("mason-lspconfig").setup_handlers(require("custom.lsp"))
+      require("mason-null-ls").setup({
+        automatic_setup = true,
+      })
+      require("null-ls").setup()
+      require("mason-null-ls").setup_handlers()
     end,
   },
 }
