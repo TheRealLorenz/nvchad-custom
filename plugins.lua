@@ -1,7 +1,7 @@
 ---@type NvPluginSpec[]
 local M = {
   {
-    'stevearc/dressing.nvim',
+    "stevearc/dressing.nvim",
     event = "UiEnter",
   },
 
@@ -25,10 +25,10 @@ local M = {
     },
     config = function()
       require("mason-lspconfig").setup()
-      require("mason-lspconfig").setup_handlers(require("custom.lsp"))
-      require("mason-null-ls").setup({
+      require("mason-lspconfig").setup_handlers(require "custom.lsp")
+      require("mason-null-ls").setup {
         automatic_setup = true,
-      })
+      }
       require("null-ls").setup()
       require("mason-null-ls").setup_handlers()
     end,
