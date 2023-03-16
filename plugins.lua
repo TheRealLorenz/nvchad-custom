@@ -6,6 +6,13 @@ local M = {
   },
 
   {
+    "kylechui/nvim-surround",
+    -- TODO: better event
+    event = "VeryLazy",
+    config = true,
+  },
+
+  {
     "neovim/nvim-lspconfig",
     event = "VeryLazy",
     dependencies = {
