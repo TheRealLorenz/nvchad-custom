@@ -13,6 +13,12 @@ local M = {
   },
 
   {
+    "christoomey/vim-tmux-navigator",
+    -- TODO: better event
+    event = "VeryLazy",
+  },
+
+  {
     "neovim/nvim-lspconfig",
     event = "VeryLazy",
     dependencies = {
