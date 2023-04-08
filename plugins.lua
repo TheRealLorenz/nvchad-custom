@@ -19,6 +19,19 @@ local M = {
   },
 
   {
+    "mizlan/iswap.nvim",
+    keys = {
+      {
+        "<leader>I",
+        function()
+          vim.cmd [[ISwap]]
+        end,
+        desc = "ISwap",
+      },
+    },
+  },
+
+  {
     "neovim/nvim-lspconfig",
     event = "VeryLazy",
     dependencies = {
