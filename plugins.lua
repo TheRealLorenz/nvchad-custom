@@ -59,6 +59,13 @@ local M = {
       require("mason-null-ls").setup_handlers()
     end,
   },
+
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    opts = {
+      show_current_context_start = false,
+    },
+  },
 }
 
 return M
